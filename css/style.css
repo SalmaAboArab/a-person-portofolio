@@ -1,0 +1,611 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --second-color:#748182;
+    --bg-color:#f7f7f7;
+
+}
+header{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    overflow: hidden;
+    background-position: 0px 0px;
+}
+header h1{
+    font-size: 70px;
+}
+header h2{
+    font-size: 40px;
+}
+h1, h2, h3, h4, h5, h6, .logo {
+    font-family: 'Montserrat', sans-serif;
+}
+.logo{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.logo:hover{
+    color: #fff;
+}
+header h2{
+    font-size: 60px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 100;
+    color: rgb(236, 229, 229);
+}
+header h2::after{
+    content: "|";
+    font-weight: 500;
+    animation-name: typing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    font-weight: 600;
+    color: #fff;
+}
+@keyframes typing{
+    0%{content: "|";}
+    2%{content: "L|";}
+    3%{content: "La|";}
+    4%{content: "Lar|";}
+    5%{content: "Larr|";}
+    6%{content: "Larry|";}
+    7%{content: "Larry |";}
+    8%{content: "Larry D|";}
+    9%{content: "Larry Da|";}
+    10%{content: "Larry Dan|";}
+    11%{content: "Larry Dani|";}
+    12%{content: "Larry Danie|";}
+    13%{content: "Larry Daniel|";}
+    14%{content: "Larry Daniels|";}
+    24%{content: "Larry Daniels|";}
+    25%{content: "Larry Daniel|";}
+    26%{content: "Larry Danie|";}
+    27%{content: "Larry Dani|";}
+    28%{content: "Larry Dan|";}
+    29%{content: "Larry Da|";}
+    30%{content: "Larry D|";}
+    31%{content: "Larry |";}
+    32%{content: "Larry|";}
+    33%{content: "Larr|";}
+    34%{content: "Lar|";}
+    35%{content: "La|";}
+    36%{content: "L|";}
+    40%{content: "|";}
+
+    41%{content: "D|";}
+    42%{content: "De|";}
+    43%{content: "Dev|";}
+    44%{content: "Deve|";}
+    45%{content: "Devel|";}
+    46%{content: "Develo|";}
+    47%{content: "Develop|";}
+    48%{content: "Develope|";}
+    49%{content: "Developer|";}
+    59%{content: "Developer|";}
+    60%{content: "Develope|";}
+    61%{content: "Develop|";}
+    62%{content: "Develo|";}
+    63%{content: "Devel|";}
+    64%{content: "Deve|";}
+    65%{content: "Dev|";}
+    66%{content: "De|";}
+    67%{content: "D|";}
+    71%{content: "|";}
+   
+    72%{content: "D|";}
+    73%{content: "De|";}
+    74%{content: "Des|";}
+    75%{content: "Desi|";}
+    76%{content: "Desig|";}
+    77%{content: "Design|";}
+    78%{content: "Designe|";}
+    79%{content: "Designer|";}
+    89%{content: "Designer|";}
+    90%{content: "Designe|";}
+    91%{content: "Design|";}
+    92%{content: "Desig|";}
+    93%{content: "Desi|";}
+    94%{content: "Des|";}
+    95%{content: "De|";}
+    96%{content: "D|";}
+    97%{content: "|";}
+    100%{content: "|";}
+   
+}
+
+.nava{
+    position: relative;
+    font-size: 14px;
+}
+
+.navhm::before {
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    top: 80%;
+    left: 7px;
+    width: 75%;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.hedbg{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.hedbg h5{
+    font-size: 50px;
+}
+.social-icon{
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-width: 4px;
+    transition: 0.6s;
+}
+.social-icon i{
+    font-size: 80%;
+    color: #fff;
+}
+.social-media{
+    top: 65%;
+    left: 43%;
+}
+.aboutlayer{
+    width: 85%;
+    height: 70%;
+    background-image: url(../img/dots.png);
+    background-position: center center;
+    z-index: 1;
+    position: relative;
+    bottom: 74%;
+    right: 10%;
+}
+.aboutimg{
+    z-index: 99;
+    left: 5%;
+    bottom: 10%;
+}
+.abouttext h3{
+    margin-bottom: 8%;
+}
+.abouttext::after{
+    content: "UI / UX DESIGNER & WEB DEVELOPER";
+    color: #999;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 15%;
+}
+.abouttext p{
+    line-height: 1.6;
+    font-size: 15px;
+    color: #748182;
+}
+.abouttext span{
+    font-weight: 900;
+}
+.abouttext{
+    right: 6%;
+}
+
+.perc1{
+    width: 100%;
+    height: 4%;
+    border-radius: 4px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 7px rgb(0 0 0 / 15%) inset;
+    
+}
+.perc2{
+    height: 100%;
+    border-radius: 4px;
+    font-size: 13px;
+}
+.percenum1{
+    width: 95%;
+}
+.percenum1::after{
+    content: "95%";
+    position: absolute;
+    left: 87%;
+}
+.percenum2{
+    width: 80%;
+}
+.percenum2::after{
+    content: "80%";
+    position: absolute;
+    left: 72%;
+}
+.percenum3{
+    width: 90%;
+}
+.percenum3::after{
+    content: "90%";
+    position: absolute;
+    left: 82%;
+}
+.btncontain{
+    bottom: 12%;
+}
+.abouttext button{
+    font-size: 13px;
+}
+.bt1{
+    color: #fff;
+    background-color: black;
+    transition: 0.5s ease-out;
+}
+.bt1:hover{
+    color: black;
+    background-color: #fff;
+}
+.bt2{
+    color: black;
+    background-color: #fff;
+    transition: 0.5s ease-in;
+}
+.bt2:hover{
+    color: #fff;
+    background-color: black;
+}
+
+
+.services{
+    background-color: var(--bg-color);
+}
+
+.serv h3{
+    font-size: 40px;
+    z-index: 999;
+}
+.serv h3::before {
+    content: '';
+    width: 12%;
+    height: 30px;
+    background-image: url(../img/dots.png);
+    background-position: center center;
+    position: absolute;
+    bottom: -11px;
+    left: 44%;
+}
+.serv h3::after{
+    content: "Services.";
+    position: absolute;
+    bottom: -5px;
+    left: 44%;
+    font-size: 40px;
+}
+.servcont .icon i{
+    font-size: 25px;
+    position: relative;
+    top: 30%;
+}
+.servcont .icon{
+    width: 1rem;
+    height: 1rem;
+    background-color: #f4f4f4;
+    transition: 0.5s;
+    padding: 10%;
+}
+.servcont:hover .icon{
+    color: #fff;
+    background-color: black;
+    border-width: 10px;
+}
+.servcont p{
+    color: var(--second-color);
+    word-spacing: 2px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+
+
+
+/* ****************************** */
+
+.port h3::before {
+    content: '';
+    width: 13%;
+    height: 30px;
+    background-image: url(../img/dots.png);
+    background-position: center center;
+    position: absolute;
+    bottom: -11px;
+    left: 44%;
+}
+
+.port h3::after{
+    content: "Portfolio.";
+    position: absolute;
+    bottom: -5px;
+    left: 44%;
+    font-size: 40px;
+}
+.but{
+    border: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-bottom: 50px;
+    font-size: 15PX;
+    font-weight: 600;
+    padding-left: 20px;
+    /* color: #222; */
+}
+.but1::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:40%;
+    right: 87%;
+    width: 7%;
+    height: 3px;
+}
+.bts{
+    left:40%;
+}
+
+
+.hd{
+    z-index: 10000;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 90%;
+    height: 95%;
+    margin-left: 5%;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+.hd h6{
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+    transition: 0.5s ease-in-out;
+}
+.photos .hd:hover{
+     background-color: rgba(255, 255, 255,0.9);
+     opacity: 1;
+     top: 2.5%;     
+}
+.photos .hd:hover h6{
+    margin-bottom: 0;
+}
+.porticon a{
+    text-decoration: none;
+}
+.hd .icon{
+        padding: 0;
+        background-color: transparent;
+}
+.hd .icon i{
+    font-size: 10px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    box-sizing: border-box;
+    padding-left: 12%;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background-color: black;
+    transition: 0.1s ease-in-out;
+}
+.hd .icon i:hover{
+    background-color: #fff;
+    color: black;
+}
+
+/* ****************************** */
+
+.testimonial,.ourblog{
+    background-color: var(--bg-color);
+}
+.testimonial p,span{
+    color: #748182;
+}
+.testimonial span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 5px;
+    background-color: #aaaaaa;
+}
+.cars{
+    transition: 0.3s;
+}
+.cars:hover{
+    background-color: #7c7c7c;
+}
+.testi h3::before {
+    content: '';
+    width: 18%;
+    height: 30px;
+    background-image: url(../img/dots.png);
+    background-position: center center;
+    position: absolute;
+    bottom: -11px;
+    left: 40%;
+}
+
+.testi h3::after{
+    content: "Testimonials.";
+    position: absolute;
+    bottom: -5px;
+    left: 40%;
+    font-size: 40px;
+}
+
+/* ****************************** */
+.count i{
+    font-size: 30px;
+    color: black;
+}
+.count p{
+    color: #748182;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+/* ****************************** */
+
+.blog h3::before {
+    content: '';
+    width: 13%;
+    height: 30px;
+    background-image: url(../img/dots.png);
+    background-position: center center;
+    position: absolute;
+    bottom: -11px;
+    left: 44%;
+}
+
+.blog h3::after{
+    content: "Our Blog.";
+    position: absolute;
+    bottom: -5px;
+    left: 44%;
+    font-size: 40px;
+}
+.ourblog .cards{
+   border: none;
+}
+
+.card-title{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.cards h6{
+    font-size: 13px;
+    color: rgb(109, 107, 107);
+    font-weight: 200;
+}
+.cards h6::after{
+    content: "";
+    position: absolute;
+    width: 22%;
+    height: 2px;
+    top: 95%;
+    left: 15px;
+    background-color: black;
+}
+.blgimgcont{
+    overflow: hidden;
+}
+.blgimgcont img{
+    transition: 0.3s ease-in-out;
+}
+.blgimgcont:hover img{
+    transform: scale(1.1,1.1);
+}
+.cards p{
+    font-size: 20px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.cards{
+    margin-bottom: 2%;
+}
+.ourblog .carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: rgb(136, 134, 134);
+}
+
+
+/* ****************************** */
+
+.contact h3::before {
+    content: '';
+    width: 16%;
+    height: 30px;
+    background-image: url(../img/dots.png);
+    background-position: center center;
+    position: absolute;
+    bottom: -11px;
+    left: 40%;
+}
+
+.contact h3::after{
+    content: "Contact Us.";
+    position: absolute;
+    bottom: -5px;
+    left: 40%;
+    font-size: 40px;
+}
+
+.conticn{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    left: 40%;
+    background: #f4f4f4;
+    transition: 0.3s ease-in-out;
+}
+.conticn i{
+    font-size: 25px;
+    transition: 0.3s ease-in-out;
+}
+.conticn:hover{
+    background-color: black;
+}
+.conticn:hover i{
+    color: white;
+}
+.contactus p{
+    font-size: 15px;
+    color: var(--second-color);
+}
+
+
+.form{
+ 
+}
+.form input,textarea{
+    padding-top: 1%;
+    padding-left: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #f4f4f4;
+}
+
+.fm{
+    padding-bottom: 10%;
+}
+.contform button{
+    border: solid black 1px;
+    font-size: 13px;
+    background-color: black;
+    color: white;
+    transition: 0.3s ease-in;
+}
+.contform button:hover{
+    border: solid black 1px;
+    background-color: white;
+    color: black;
+}
+
+.end{
+    background: #1c1c1c;
+    color: var(--second-color);
+    font-size: 13px;
+}
